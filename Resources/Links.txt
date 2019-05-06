@@ -29,3 +29,16 @@ https://github.com/wanghaisheng/awesome-microservice/blob/master/README.md
 
 MicroServices NginX
 https://www.nginx.com/blog/building-microservices-using-an-api-gateway/
+
+Design Framework
+https://github.com/donnemartin/system-design-primer#index-of-system-design-topics
+https://github.com/donnemartin/system-design-primer#company-engineering-blogs
+
+Crack the SDI
+https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
+
+Rate Limiter
+https://stripe.com/mx/blog/rate-limiters
+
+HiredInTech
+https://www.hiredintech.com/classrooms/system-design/lesson/55
