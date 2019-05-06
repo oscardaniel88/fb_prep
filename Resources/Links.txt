@@ -16,6 +16,7 @@ https://www.apiacademy.co/
 
 Netflix
 https://www.google.com.mx/amp/s/www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/amp/
+https://medium.com/@narengowda/netflix-system-design-dbec30fede8d
 
 Twitter
 https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md
