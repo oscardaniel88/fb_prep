@@ -1,10 +1,10 @@
 Interview Prep
-http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html
+http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html --> ok
 
 Design Questions
-http://blog.gainlo.co/index.php/2016/03/29/design-news-feed-system-part-1-system-design-interview-questions/
-https://github.com/yangshun/tech-interview-handbook/blob/master/design/news-feed.md
-https://www.quora.com/What-are-the-answers-to-the-API-design-interview-questions-What-exactly-is-the-interviewer-expecting
+http://blog.gainlo.co/index.php/2016/03/29/design-news-feed-system-part-1-system-design-interview-questions/ -->ok
+https://github.com/yangshun/tech-interview-handbook/blob/master/design/news-feed.md --> ok
+https://www.quora.com/What-are-the-answers-to-the-API-design-interview-questions-What-exactly-is-the-interviewer-expecting --> ok
 https://medium.com/facebook-design/questions-and-answers-from-design-interviews-at-facebook-ef685f6968a3
 https://medium.com/search?q=api%20design
 
@@ -13,3 +13,18 @@ https://github.com/dwyl/learn-api-design
 
 Api Academy
 https://www.apiacademy.co/
+
+Netflix
+https://www.google.com.mx/amp/s/www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/amp/
+
+Twitter
+https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md
+
+MicroServices Architecture (manning)
+https://livebook.manning.com/#!/book/microservices-patterns/about-this-book/9
+
+MicroServices Github
+https://github.com/wanghaisheng/awesome-microservice/blob/master/README.md
+
+MicroServices NginX
+https://www.nginx.com/blog/building-microservices-using-an-api-gateway/
