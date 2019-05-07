@@ -11,7 +11,7 @@ https://medium.com/search?q=api%20design
 Api Design Github
 https://github.com/dwyl/learn-api-design
 
-Api Academy
+Api Academyd
 https://www.apiacademy.co/
 
 Netflix
@@ -42,3 +42,6 @@ https://stripe.com/mx/blog/rate-limiters
 
 HiredInTech
 https://www.hiredintech.com/classrooms/system-design/lesson/55
+
+Gainlo
+http://blog.gainlo.co/index.php/category/system-design-interview-questions/
