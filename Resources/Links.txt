@@ -31,7 +31,7 @@ MicroServices NginX
 https://www.nginx.com/blog/building-microservices-using-an-api-gateway/
 
 Design Framework
-https://github.com/donnemartin/system-design-primer#index-of-system-design-topics
+https://github.com/donnemartin/system-design-primer#index-of-system-design-topics --> OK
 https://github.com/donnemartin/system-design-primer#company-engineering-blogs
 
 Crack the SDI
@@ -41,7 +41,13 @@ Rate Limiter
 https://stripe.com/mx/blog/rate-limiters
 
 HiredInTech
-https://www.hiredintech.com/classrooms/system-design/lesson/55
+https://www.hiredintech.com/classrooms/system-design/lesson/55 --OK
 
 Gainlo
 http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+
+Facebook
+https://www.minterest.com/list-of-all-facebook-products-and-services/
+
+Study Guide
+https://medium.com/better-programming/the-software-engineering-study-guide-bac25b8b61eb 
