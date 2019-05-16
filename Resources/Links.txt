@@ -50,4 +50,10 @@ Facebook
 https://www.minterest.com/list-of-all-facebook-products-and-services/
 
 Study Guide
-https://medium.com/better-programming/the-software-engineering-study-guide-bac25b8b61eb 
+https://medium.com/better-programming/the-software-engineering-study-guide-bac25b8b61eb
+https://www.quora.com/How-can-I-get-a-job-at-Facebook-or-Google-in-6-months-I-need-a-concise-work-plan-to-build-a-good-enough-skill-set-Should-I-join-some-other-start-up-or-build-my-own-projects-start-up-Should-I-just-focus-on-practicing-data-structures-and-algorithms/answer/Jimmy-Saade?ch=10&share=cd16ec97&srid=hluLU
+
+Behavioral
+https://www.themartec.com/insidelook/behavioral-interview-questions
+https://biginterview.com/blog/2013/09/behavioral-interview-questions-conflict.html
+ 
