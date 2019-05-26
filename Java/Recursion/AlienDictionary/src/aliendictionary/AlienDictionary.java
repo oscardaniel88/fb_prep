@@ -11,6 +11,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  *
@@ -37,6 +38,29 @@ public class AlienDictionary {
         for(int i = 0; i < degree.length; i++){
             System.out.print(degree[i]+"  ");
         }
+    }
+    public static void dfs(Character c,HashMap<Character,HashSet<Character>> graph, boolean[]visited, Stack<Character> stack ){
+        visited[c-'a']=true;
+        for(Character neighbor : graph.get(c)){
+            if(!visited[neighbor - 'a']){
+                visited[neighbor - 'a']=true;
+                dfs(neighbor,graph,visited,stack);
+            }
+        }
+        stack.push(c);
+    }
+    
+    public static String  topoSortDFS(HashMap<Character,HashSet<Character>> graph, boolean[] visited, Stack<Character> stack){
+        for(Character c : graph.keySet()){
+            if(visited[c-'a']==false){
+                dfs(c,graph,visited,stack);
+            }
+        }
+        String result = "";
+        while(!stack.isEmpty()){
+            result = result + stack.pop();
+        }
+        return result;
     }
     
     public static String topologicalSort(HashMap<Character,HashSet<Character>> graph, int[] degree){
@@ -78,6 +102,7 @@ public class AlienDictionary {
                         graph.get(wordparent.charAt(j)).add(wordchildren.charAt(j));
                         degree[wordchildren.charAt(j)-'a']++;
                     }
+                    break;
                 }
             }
         }
@@ -90,7 +115,13 @@ public class AlienDictionary {
         int[] degree = new int[26];
         graph = buildGraph(words,degree);
         printGraph(graph,degree);
-        String result = topologicalSort(graph,degree);
+        //String result = topologicalSort(graph,degree);
+        boolean [] visited = new boolean[26];
+        for(int i = 0; i < visited.length; i++){
+            visited[i]=false;
+        }
+        Stack<Character> stack = new Stack<>();
+        String result = topoSortDFS(graph, visited, stack);
             
         return result.length()==graph.size()? result:"";
     }
