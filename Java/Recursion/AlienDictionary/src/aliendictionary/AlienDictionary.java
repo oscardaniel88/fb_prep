@@ -5,9 +5,11 @@
  */
 package aliendictionary;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
@@ -38,6 +40,38 @@ public class AlienDictionary {
         for(int i = 0; i < degree.length; i++){
             System.out.print(degree[i]+"  ");
         }
+    }
+    
+    public static boolean cycleRec(Character node, boolean[]visited, boolean[] recStack,HashMap<Character,HashSet<Character>> graph){
+        if(!visited[node-'a']){
+            visited[node-'a']=true;
+            recStack[node-'a']=true;
+            for(Character neighbor:graph.get(node)){
+                if(!visited[neighbor-'a'] && cycleRec(neighbor,visited,recStack,graph)){
+                    return true;
+                }else if(recStack[neighbor-'a']){
+                    return true;
+                }
+            }
+        }
+        recStack[node-'a']=false;
+        return false;    
+    }
+    
+    public static boolean cycle(HashMap<Character,HashSet<Character>> graph){
+        boolean [] visited = new boolean[26];
+        boolean [] recStack = new boolean[26];
+        
+        for (int i = 0 ; i < 26; i++){
+            visited[i]=false;
+            recStack[i]=false;
+        }
+        for(Character node : graph.keySet()){
+           if(cycleRec(node,visited,recStack,graph)){
+               return true;
+           }
+        }
+        return false;
     }
     public static void dfs(Character c,HashMap<Character,HashSet<Character>> graph, boolean[]visited, Stack<Character> stack ){
         visited[c-'a']=true;
@@ -122,14 +156,18 @@ public class AlienDictionary {
         }
         Stack<Character> stack = new Stack<>();
         String result = topoSortDFS(graph, visited, stack);
-            
+        System.out.println();
+        if(cycle(graph))
+            return "";
         return result.length()==graph.size()? result:"";
     }
     
     
     public static void main(String[] args) {
         // TODO code application logic here
-        String[]words = {"wrt","wrf","er","ett","rftt"};
+        //String [] words = {"jpoo","ztap","mhp","rzykfv","e","c","exubbjvmom","qi","tlrzz","krxme","svb"};
+        //String [] words = {"wrt","wrf","er","ett","rftt"};
+        String[]words = {"z","x","z"};
         String result = alienOrder(words);
         System.out.println();
         System.out.println("Alien Order  " +result); 
